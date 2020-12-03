@@ -1,0 +1,705 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background:#ffffff;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	margin:0;
+	padding:0;
+	width:100%;
+	}
+img{
+	border:none;
+	}
+h1,h2,h3,h4,h5,h6{
+	margin:0;
+	padding:0;
+	}
+h1{
+	margin:0.5em 0;
+	}
+h2{
+	color:#4d4d4d;
+	font-size:16px;
+	text-align: center;
+	}
+error{
+	color:#FF0000;
+	text-align:center;
+	}
+a{
+	color:#0975a2;
+	text-decoration:none;
+	}
+a:hover{
+	color:#004c6b;
+	text-decoration:none;
+	}
+	
+p{
+	
+}
+
+.head{
+	padding:5px;
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	text-align: center;
+	font-size: 1.25rem;
+	font-weight:400;
+	vertical-align: middle;
+	}
+	
+.head img{
+	display: inline-block;
+	margin-right: 3px;
+	}
+	
+.hide{
+	display: none;
+	}
+	
+.content{
+	font-size:12px;
+	color:#4d4d4d;
+	line-height:2em;
+	margin:5px;
+	padding:0;
+	}
+	
+	
+.green
+	{
+		background-color: green;
+		-moz-box-shadow: 1px 2px 4px #2a5428;
+		-webkit-box-shadow: 1px 2px 4px #2a5428;
+		box-shadow: 1px 2px 4px #2a5428;
+	}
+
+.red {
+    background-color: red;
+    -moz-box-shadow: 1px 2px 4px #912a2a;
+    -webkit-box-shadow: 1px 2px 4px #912a2a;
+    box-shadow: 1px 2px 4px #912a2a;
+}
+
+.WeekSelect
+{
+	float: left;
+	padding-left: 20%;
+}
+
+.TeamSelect
+{
+	float: right;
+	padding-right: 20%;
+}
+
+.Linebreak
+{
+	margin: 7px;
+}
+
+
+/* Quals */
+
+#Quals {
+		margin-bottom: 3px;
+		margin-top: 3px;
+		margin-right: 3px;
+		width:auto;
+		float : none ;
+		font-size:12px;
+	}
+
+
+cs { 
+	border:1px solid green;
+	background-color: green;
+}
+
+swd { 
+	border:1px solid red;
+	background-color: red;
+}
+
+vr { 
+	border:1px solid #eb8c34;
+	background-color: #eb8c34;
+}
+
+ls { 
+	border:1px solid black;
+	background-color: black;
+}
+
+fr1 { 
+	border:1px solid #34e5eb;
+	background-color: #34e5eb;
+}
+
+fr2 { 
+	border:1px solid #34aeeb;
+	background-color: #34aeeb;
+}
+
+fr3 { 
+	border:1px solid #3446eb;
+	background-color: #3446eb;
+}
+
+
+
+cs, swd, vr, ls, fr1, fr2, fr3{ 
+	position: relative;
+	border-radius: 5px; 
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	padding-left: 3px;
+    padding-right: 3px;
+}
+
+
+cs .tooltip, swd .tooltip, vr .tooltip, ls .tooltip, fr1 .tooltip, fr2 .tooltip, fr3 .tooltip {
+  visibility: hidden;
+  width: 150px;
+  background-color: black;
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  color: #fff;
+  font-size:12px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -150px;
+}
+
+cs:hover .tooltip, swd:hover .tooltip, vr:hover .tooltip, ls:hover .tooltip, fr1:hover .tooltip, fr2:hover .tooltip, fr3:hover .tooltip {
+  visibility: visible;
+}
+
+
+
+
+/* Ranks */
+JR {
+  background: url('images/JobReady.png') 0 0;
+}
+
+OP {
+  background: url('images/Operator.png') 0 0;
+}
+
+SOP {
+  background: url('images/SeniorOperator.png') 0 0;
+}
+
+SGO {
+  background: url('images/SeniorGroupOfficer.png') 0 0;
+}
+
+INS {
+  background: url('images/Inspector.png') 0 0;
+}
+
+JR, OP, SOP, SGF, INS, SGO {
+  position: relative;
+  width: 10px;
+  height: 20px;
+  display: inline-block;
+  background-size: 10px 20px;
+}
+
+JR .tooltiptext, OP .tooltiptext, SOP .tooltiptext, SGF .tooltiptext, INS .tooltiptext, SGO .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  color: #fff;
+  font-size:12px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -120px;
+}
+
+JR:hover .tooltiptext, OP:hover .tooltiptext, SOP:hover .tooltiptext, SGF:hover .tooltiptext, SGO:hover .tooltiptext, INS:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+
+	
+.thintable 
+{
+	border:1px solid black;
+	background-color: #ffffff;
+	border-spacing: 0;
+	border-radius: 5px; 
+}
+
+.thintable td, .thintable th
+{
+	padding-bottom: 5px;
+	padding-top: 5px;
+	padding-left: 7px;
+    padding-right: 7px;
+	font-size: 12px;
+	text-align: center;
+	
+}
+
+.thintable tr
+{
+	border:1px solid black;
+	border-collapse:collapse;
+}
+
+.memberstable
+{
+	border:1px solid black;
+	border-radius: 5px; 
+	border-spacing: 0;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	min-width: 500px;
+}
+
+.memberstable td
+{
+	font-size: 13px;
+	height: 20px;
+	min-width: 130px;
+}
+
+.memberstable td.tblMemberQuals
+{
+	text-align: right;
+	padding-right: 2px;
+	min-width: 220px;
+}
+
+	.memberstable td.tblMemberPhone
+	{
+		max-width: 80px;
+		min-width: 75px;
+		width: 75px;
+	}
+
+
+.memberstable th
+{
+	width: 15px;
+}
+
+.filters 
+{
+	max-width: 700px;
+}
+
+.memberstable tr:hover 
+{
+	background-color: #cfcfcf;
+}
+
+
+
+	
+.tableexport
+{
+	border:1px solid black;
+	border-radius: 5px; 
+	background-color: #ffffff;
+	border-spacing: 0;
+}
+
+.tableexport td, .tableexport th
+{
+	padding-bottom: 4px;
+	padding-top:4px;
+	padding-left: 1px;
+    padding-right: 1px;
+	font-size: 12px;
+	text-align: center;
+}
+
+.tableexport th
+{
+  font-weight: normal;
+  background: white;
+  position: sticky;
+  top: 0; /* Don't forget this, required for the stickiness */
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}
+
+.tableexport th.stick
+{
+  font-weight: normal;
+  background: white;
+  position: sticky;
+  top: 23; /* Don't forget this, required for the stickiness */
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}
+
+.tableexport tr:hover 
+{
+	background-color: #cfcfcf;
+}
+
+.exportmember
+{
+	min-width: 100px;
+}
+
+.table tr:nth-child(odd) td 
+	{
+		background: #FEFEFE; 
+	}
+
+.container {
+    overflow-x: scroll;
+    margin-left: 110px;
+	overflow-y: visible;
+}
+
+.fixed {
+
+    background: #ffffff;
+	position: absolute;
+	  width: 100px;
+	  left: 0;
+	  top: auto;
+	  border-top-width: 1px;
+	  /*only relevant for first row*/
+	  margin-top: -1px;
+	  /*compensate for top border*/
+}
+
+.newday {
+	border-left: 1px solid black;
+}
+
+/* Inline menu */
+.menuInline {
+	margin:2px 2px;
+	padding:0;
+	}
+	
+.menuInline a{
+	font-size:12px;
+	font-weight:normal;
+	text-align:center;
+	display:inline-block;
+	background:#eeeeee;
+	border:1px solid #dddddd;
+	color:#333;
+	padding:5px;
+	margin:5px 0;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	-moz-box-shadow:0 2px 4px #aaaaaa;
+	-webkit-box-shadow:0 2px 4px #aaaaaa;
+	box-shadow:0 2px 4px #aaaaaa;
+	}
+	
+.menuInline a:hover{
+	color:#000;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+	}
+
+.menuInline a#selected{
+	color:#990000;
+	}
+	
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+	
+	
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 3px;
+  right : 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}	
+
+
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 15px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.form-container label {
+  text-align: left;
+
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password], .form-container select {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0 10px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus , .form-container select:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 10%; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  text-align: center;
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 50%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.5s;
+  animation-name: animatetop;
+  animation-duration: 0.5s;
+  border-radius: 8px 8px 6px 6px;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+  border-radius: 6px 6px 0px 0px;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.Selectheading {
+	    margin: 0.5em 0;
+		font-size: 2em;
+		font-weight: bold;
+		border: none;
+		color: #4d4d4d;
+		text-align: center;
+		font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.Selectheading option{
+		font-weight: bold;
+		color: #4d4d4d;
+		text-align: center;
+		font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+
+@media screen and (min-width: 800px) {
+  .thintable td, .thintable th
+	{
+		padding-bottom: 6px;
+		padding-top: 6px;
+		padding-left: 8px;
+		padding-right: 8px;
+		font-size: 13px;
+		text-align: center;
+		
+	}
+	
+	.content
+	{
+		font-size:13px;
+	}
+	
+	.memberstable
+	{
+		min-width: 600px;
+		max-width: 700px;
+		width: 50%;
+	}
+	
+	.memberstable td
+	{
+		min-width: 150px;
+	}
+	
+	#Quals 
+	{
+		
+		float : right ;
+	}
+
+
+	
+}
+
+	
+	
+	/* responsive, form small screens, use 13px font size */
+@media (max-width: 600px) {
+	.memberstable
+	{
+		min-width: 405px;
+	}
+	
+	
+	
+	
+	.memberstable td
+	{
+		font-size: 12px;
+	}
+	
+	
+	.memberstable td.tblMemberName
+	{
+		max-width: 100px;
+		min-width: 100px;
+		width: 100px;
+	}
+	
+
+	
+	.memberstable td.tblMemberQuals
+	{
+		min-width: 100px;
+	}
+	
+	/* Quals */
+	#Quals {
+		width:auto;
+		float : none ;
+	}
+	
+	
+	.WeekSelect
+	{
+		float: none;
+		padding-right: 2%;
+		padding-left: 2%;
+		display: inline-block;
+		text-align:center;
+	}
+		
+	.TeamSelect
+	{
+		float: none;
+		padding-right: 2%;
+		padding-left: 2%;
+		display: inline-block;
+		text-align:center;
+	}
+	
+	.Linebreak
+	{
+		display: none;
+		margin: 0px;
+	}
+	
+	/* Modal Content */
+	.modal-content {
+	  width: 80%;
+
+	}
+}
